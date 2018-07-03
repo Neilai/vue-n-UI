@@ -1,0 +1,42 @@
+<!--Created by Neil-->
+<!--2018-06-30 09:35-->
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: blue;
+        }
+        #app {
+            margin: 20px;
+        }
+        body {
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <n-button-group>
+        <n-button  icon="setting" icon-position="right" :loading="loading" @click="loading=!loading">hhh</n-button>
+        <n-button  icon="upload" :loading="loading" @click="loading=!loading">hhh</n-button>
+        <n-button  icon="download"  :loading="loading" @click="loading=!loading">hhh</n-button>
+    </n-button-group>
+</div>
+<div id="test"></div>
+</body>
+<script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_730157_vd6u8xq3jao.js"></script>
+<script>
+</script>
+</html>
