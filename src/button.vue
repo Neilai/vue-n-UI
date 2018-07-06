@@ -1,5 +1,5 @@
 <template>
-    <button class="n-button" :class="{[`icon-${iconPosition}`]: true}"  @click="$emit('click')">
+    <button class="n-button" :class="[`icon-${iconPosition}`]"  @click="$emit('click')">
         <n-icon class="icon" v-if="icon&&!loading" :name="icon"/>
         <n-icon class="loading icon" v-if="loading" name="loading"/>
         <div class="content">
@@ -8,6 +8,7 @@
     </button>
 </template>
 <script type="text/ecmascript-6">
+    //[] 意味着里面是个js 变量   {}键是否显示取决于值
     import Icon from './icon.vue'
     export default{
         components:{

@@ -1,6 +1,10 @@
 <template>
-<div class="wrapper" :class="{'error':error}">
-    <input type="text" :value="value" :disabled="disabled" :readonly="readonly">
+<div class="wrapper" :class="{error}">
+    <input type="text" :value="value" :disabled="disabled" :readonly="readonly"
+           @change="$emit('change', $event.target.value)"
+           @input="$emit('input', $event.target.value)"
+           @focus="$emit('focus', $event.target.value)"
+           @blur="$emit('blur', $event.target.value)">
     <tmplate v-if="error">
         <n-icon name="error" class="icon-error"></n-icon>
         <span class="errorMessage">{{error}}</span>
@@ -29,7 +33,7 @@
             error: {
                 type: String
             }
-        }
+        },
     }
 </script>
 

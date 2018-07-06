@@ -17,6 +17,7 @@ new Vue({
     el: '#app',
     data: {
         loading: false,
+        message:"哈哈哈哈哈哈",
     }
 })
 // import chai from 'chai'
