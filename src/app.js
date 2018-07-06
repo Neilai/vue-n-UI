@@ -6,9 +6,13 @@ import Vue from 'vue'
 import Button from './button.vue'
 import Icon from './icon.vue'
 import ButtonGroup from './button-group.vue'
+import Input from './input.vue'
+
 Vue.component('n-icon', Icon)
 Vue.component('n-button', Button)
 Vue.component('n-button-group', ButtonGroup)
+Vue.component('n-input', Input)
+
 new Vue({
     el: '#app',
     data: {
