@@ -7,11 +7,16 @@ import Button from './button.vue'
 import Icon from './icon.vue'
 import ButtonGroup from './button-group.vue'
 import Input from './input.vue'
+import Row from './row'
+import Col from './col'
+
 
 Vue.component('n-icon', Icon)
 Vue.component('n-button', Button)
 Vue.component('n-button-group', ButtonGroup)
 Vue.component('n-input', Input)
+Vue.component('n-row', Row)
+Vue.component('n-col', Col)
 
 new Vue({
     el: '#app',
