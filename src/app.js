@@ -9,7 +9,7 @@ import ButtonGroup from './button-group.vue'
 import Input from './input.vue'
 import Row from './row'
 import Col from './col'
-
+import plugin from './plugin'
 
 Vue.component('n-icon', Icon)
 Vue.component('n-button', Button)
@@ -17,12 +17,25 @@ Vue.component('n-button-group', ButtonGroup)
 Vue.component('n-input', Input)
 Vue.component('n-row', Row)
 Vue.component('n-col', Col)
+Vue.use(plugin)
 
 new Vue({
     el: '#app',
     data: {
         loading: false,
         message:"哈哈哈哈哈哈",
+    },
+    methods:{
+        showToast(){
+            this.$toast("我是message",{
+                closeButton:{
+                text:"知道了",
+                callback(){
+                    console.log("用户说他知道了");
+                }
+            }
+            })
+        }
     }
 })
 // import chai from 'chai'
