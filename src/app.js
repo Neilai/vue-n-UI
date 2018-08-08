@@ -27,14 +27,7 @@ new Vue({
     },
     methods:{
         showToast(){
-            this.$toast("我是message",{
-                closeButton:{
-                text:"知道了",
-                callback(){
-                    console.log("用户说他知道了");
-                }
-            }
-            })
+            this.$toast("<strong>123</strong>",)
         }
     }
 })
