@@ -10,6 +10,12 @@ import Input from './input.vue'
 import Row from './row'
 import Col from './col'
 import plugin from './plugin'
+import Tabs from './tabs'
+import TabsHead from './tabs-head'
+import TabsBody from './tabs-body'
+import TabsItem from './tabs-item'
+import TabsPane from './tabs-panel'
+
 
 Vue.component('n-icon', Icon)
 Vue.component('n-button', Button)
@@ -18,16 +24,23 @@ Vue.component('n-input', Input)
 Vue.component('n-row', Row)
 Vue.component('n-col', Col)
 Vue.use(plugin)
+Vue.component('n-tabs', Tabs)
+Vue.component('n-tabs-head', TabsHead)
+Vue.component('n-tabs-body', TabsBody)
+Vue.component('n-tabs-item', TabsItem)
+Vue.component('n-tabs-panel', TabsPane)
+
 
 new Vue({
     el: '#app',
     data: {
+        selectedTab: 'sports',
         loading: false,
         message:"哈哈哈哈哈哈",
     },
     methods:{
         showToast(){
-            this.$toast("<strong>123</strong>",)
+            this.$toast("<strong>123</strong>",{enableHtml:true,position:"middle"})
         }
     }
 })
