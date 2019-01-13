@@ -14,6 +14,9 @@
 </template>
 <script>
     //构造组件的选项
+    //props如果是对象 必须是函数返回
+    //min-height无法使用100%  所以这里用js动态设定line高度
+    //为了避免transform冲突  在外加一层div
     export default {
         name: 'GuluToast',
         props: {

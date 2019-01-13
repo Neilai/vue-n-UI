@@ -6,6 +6,8 @@
     </div>
 </template>
 <script>
+    //将style抽象出来
+    //class先用短路判断
     let validator = (value) => {
         let keys = Object.keys(value)
         let valid = true

@@ -5,7 +5,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-
+//主要通过CSS解决border重叠的问题 hover的时候z-index改为1
 </script>
 
 <style lang="scss">

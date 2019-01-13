@@ -9,6 +9,8 @@
 </template>
 <script type="text/ecmascript-6">
     //[] 意味着里面是个js 变量   {}键是否显示取决于值
+    //flex order的使用
+    //transform属性制作旋转动画
     import Icon from './icon.vue'
     export default{
         components:{

@@ -68,6 +68,28 @@
             <!--</n-tabs-panel>-->
         <!--</n-tabs-body>-->
     <!--</n-tabs>-->
+    <!--<div style="overflow: hidden;border: 1px solid green; padding: 5px;"-->
+         <!--@click="yyy">-->
+        <!--<n-popover>-->
+            <!--<template slot="content">-->
+                <!--<div>popover内容</div>-->
+            <!--</template>-->
+            <!--<button>点我</button>-->
+        <!--</n-popover>-->
+        <!--<n-popover>-->
+            <!--<template slot="content">-->
+                <!--<div>popover内容</div>-->
+            <!--</template>-->
+            <!--<button>点我</button>-->
+        <!--</n-popover>-->
+    <!--</div>-->
+    <!--<n-collapse :selected.sync="selectedTab">-->
+        <!--<n-collapse-item title="标题1" name="1">内容1</n-collapse-item>-->
+        <!--<n-collapse-item title="标题2" name="2">内容2</n-collapse-item>-->
+        <!--<n-collapse-item title="标题3" name="3">内容3</n-collapse-item>-->
+    <!--</n-collapse>-->
+    <!--{{selectedTab}}-->
+    <n-cascader :source="source"></n-cascader>
 </div>
 </body>
 <script src="./src/app.js"></script>

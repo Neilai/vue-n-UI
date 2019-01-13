@@ -15,6 +15,10 @@ import TabsHead from './tabs-head'
 import TabsBody from './tabs-body'
 import TabsItem from './tabs-item'
 import TabsPane from './tabs-panel'
+import Popover from './popover'
+import Collapse from './collapse'
+import CollapseItem from './collapse-item'
+import Cascader from './cascader'
 
 
 Vue.component('n-icon', Icon)
@@ -29,16 +33,67 @@ Vue.component('n-tabs-head', TabsHead)
 Vue.component('n-tabs-body', TabsBody)
 Vue.component('n-tabs-item', TabsItem)
 Vue.component('n-tabs-panel', TabsPane)
+Vue.component('n-popover', Popover)
+Vue.component('n-collapse', Collapse)
+Vue.component('n-collapse-item', CollapseItem)
+Vue.component('n-cascader', Cascader)
+
 
 
 new Vue({
     el: '#app',
     data: {
-        selectedTab: 'sports',
+        selectedTab: '1',
         loading: false,
         message:"哈哈哈哈哈哈",
+        source: [{
+            name: '浙江',
+            children: [
+                {
+                    name: '杭州',
+                    children: [
+                        {name: '上城'},
+                        {name: '下城'},
+                        {name: '江干'},
+                    ]
+                },
+                {
+                    name: '嘉兴',
+                    children: [
+                        {name: '南湖'},
+                        {name: '秀洲'},
+                        {name: '嘉善'},
+                    ]
+                },
+            ]
+        }, {
+            name: '福建',
+            children: [
+                {
+                    name: '福州',
+                    children: [
+                        {name: '鼓楼'},
+                        {name: '台江'},
+                        {name: '仓山'},
+                    ]
+                },
+            ]
+        }, {
+            name: '安徽',
+            children: [{
+                name: '合肥',
+                children: [{
+                    name: '瑶海'
+                }, {
+                    name: '庐阳'
+                }]
+            }]
+        }]
     },
     methods:{
+        yyy(){
+            console.log('yyy')
+        },
         showToast(){
             this.$toast("<strong>123</strong>",{enableHtml:true,position:"middle"})
         }

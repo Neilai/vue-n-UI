@@ -13,6 +13,9 @@
 </template>
 
 <script type="text/ecmascript-6">
+    //v-model 本质   必须接收value然后触发input
+    //templte可以不引入多余div
+    //使用灰白icon  调用fill填充颜色
     import Icon from './icon'
     export default {
         components: {

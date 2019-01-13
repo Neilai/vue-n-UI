@@ -4,6 +4,8 @@
     </div>
 </template>
 <script>
+    //将gutter传给儿子  父亲属性传给子组件的方法
+    //
     export default {
         props: {
             gutter: {
